@@ -24,15 +24,71 @@
 
 <body>
     <main id="alpha-main" class="bg-[#1E1E1E] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
-        <!-- home screen -->
-        <section class="home flex flex-col gap-4 items-center justify-center min-h-screen">
+        <!--section home screen -->
+        <section class="home flex flex-col gap-4 items-center justify-center min-h-screen hidden">
             <h3 class="uppercase text-white text-8xl anton text-center">alphabet clash</h3>
             <p class="poppins text-white text-center">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
             <div class="text-center"><button class="btn">Play Now</button></div>
         </section>
+        <!-- section playground -->
         <section class="playground">
-
+            <div class="pt-36">
+                <div
+                    class="screen w-[1170px] h-[450px] border-[12px] border-[#2F2941] rounded-lg mx-auto bg-[#ffffff61] backdrop-blur-sm">
+                    <h3 class="text-center text-white bg-[#2F2941] w-80 mx-auto py-2 rounded-b-lg">Don't watch keyboard
+                        while playing
+                    </h3>
+                    <p class="text-9xl font-bold text-black text-center flex items-center justify-center h-full">
+                        Y
+                    </p>
+                </div>
+            </div>
+            <!-- keyboard copied from daisy ui -->
+            <div id="kbd" class="keyboard pt-20">
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                </div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                </div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                </div>
+            </div>
+            <div class="value flex justify-between">
+                <div
+                    class="w-40 h-14 bg-[#894189] rounded-full text-center inter text-white flex items-center justify-center">
+                    Life<span>1</span><img src="./" alt=""></div>
+                <div
+                    class="w-40 h-14 bg-[#360490] rounded-full text-center inter text-white flex items-center justify-center">
+                    Score<span>1</span></div>
+            </div>
         </section>
+        <!-- section score -->
         <section class="score">
 
         </section>
