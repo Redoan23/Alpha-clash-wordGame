@@ -2,13 +2,15 @@ function homeControl() {
     document.getElementById('home-screen').classList.add('hidden');
     document.getElementById('playground').classList.remove('hidden');
     randomNumber();
+    let color = randomNumber().innerText.toLowerCase()
+    document.getElementById(color).classList.add('bg-orange-400')
 }
 
 
 // doing the function for generating a random letter
 function randomNumber() {
     // adding and splitting a string that carries all the letters
-    
+
     let string = "abcdefghijklmnopqrstuvwxyz"
     let split = string.split('');
 
@@ -17,7 +19,7 @@ function randomNumber() {
 
     let random = split[Math.round(Math.random() * (string.length - 1))];
     let address = document.getElementById('show-letter');
-    address.innerText = random.toUpperCase();
+    address.innerText = random;
     return address
 
 }
