@@ -87,10 +87,10 @@
             <div class="value flex justify-between">
                 <div
                     class="w-40 h-14 bg-[#894189] rounded-full text-center inter text-white flex gap-1 items-center justify-center">
-                    Life<img src="./images/heart.svg" alt=""> <span>1</span></div>
+                    Life<img src="./images/heart.svg" alt=""> <span id="lives-value">5</span></div>
                 <div
                     class="w-40 h-14 bg-[#360490] rounded-full text-center inter text-white flex gap-1 items-center justify-center">
-                    Score <img src="./images/monetization_on.svg" class="pt-2" alt=""> <span>1</span></div>
+                    Score <img src="./images/monetization_on.svg" class="pt-2" alt=""> <span id="score-value">0</span></div>
             </div>
         </section>
 
@@ -100,8 +100,8 @@
             <div class="flex justify-center items-center min-h-screen">
                 <div
                     class=" bg-[#ffffff33] w-[396px] h-[282px] flex flex-col gap-5 items-center justify-center rounded-lg">
-                    <h3 class="text-white font-bold text-6xl text-center poppins">Score: <span>14</span></h3>
-                    <div class="text-center"><button id="restart-btn" class="btn poppins font-bold">Play Again</button>
+                    <h3 class="text-white font-bold text-6xl text-center poppins">Score: <span id="result">14</span></h3>
+                    <div class="text-center"><button id="restart-btn" class="btn poppins font-bold" onclick=" scoreControl()">Play Again</button>
                     </div>
                     <p class="poppins text-center text-white">practice will make you pro</p>
                 </div>
